@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css.css" />
+
+    <title>test_task</title>
+  </head>
+  <body>
+    <center>
+      <button onclick="show('block')" class="transition">вызов формы</button>
+    </center>
+    <div class="gray" onclick="show('none')" id="gray"></div>
+    <div class="window" id="window">
+      <form class="form" action="">
+        <a href="" class="btn-x" onclick="show('none')">
+          <span class="close"></span>
+        </a>
+        <h1 class="form-title">Регистрация</h1>
+        <div class="group">
+          <input
+            required
+            class="form-input"
+            type="text"
+            name="fullname"
+            placeholder="ФИО*"
+          />
+        </div>
+        <div class="group">
+          <input
+            required
+            class="form-input"
+            type="email"
+            name="email_address"
+            placeholder="E-mail (Ваш логин)*"
+          />
+        </div>
+        <div class="group">
+          <input
+            required
+            class="form-input"
+            type="tel"
+            name="tel"
+            placeholder="Телефон*"
+          />
+        </div>
+        <div class="group">
+          <input
+            class="form-input"
+            type="text"
+            name="country"
+            placeholder="Страна"
+          />
+        </div>
+        <div class="group">
+          <input
+            required
+            class="form-input"
+            type="text"
+            onfocus="(this.type='date')"
+            onblur="if(this.value==''){this.type='text'}"
+            name="birthdate"
+            placeholder="Дата рождения*"
+          />
+        </div>
+        <div class="group">
+          <input
+            required
+            class="form-input"
+            type="password"
+            name="password"
+            placeholder="Пароль*"
+          />
+        </div>
+        <div class="group">
+          <input
+            required
+            class="form-input"
+            type="password"
+            name="repeat-password"
+            placeholder="Повторить пароль*"
+          />
+        </div>
+        <div class="group">
+          <center>
+            <button class="form-button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+          </center>
+        </div>
+      </form>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
